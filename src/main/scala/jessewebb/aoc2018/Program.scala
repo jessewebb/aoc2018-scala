@@ -31,7 +31,21 @@ object Program extends App {
     println()
   }
 
+  def solveDay03(): Unit = {
+    println("Day 03\n======")
+    import jessewebb.aoc2018.day03._
+    val inputResource = "inputs/day03.txt"
+    val inputStream = getClass.getClassLoader.getResourceAsStream(inputResource)
+    val input = Source.fromInputStream(inputStream).mkString
+    val solution1 = Part1.solve(input)
+    println(s"Part 1: $solution1")
+//    val solution2 = Part2.solve(input)
+//    println(s"Part 2: $solution2")
+    println()
+  }
+
   solveDay01()
   solveDay02()
+  solveDay03()
 
 }
