@@ -39,8 +39,8 @@ object Program extends App {
     val input = Source.fromInputStream(inputStream).mkString
     val solution1 = Part1.solve(input)
     println(s"Part 1: $solution1")
-//    val solution2 = Part2.solve(input)
-//    println(s"Part 2: $solution2")
+    val solution2 = Part2.solve(input)
+    println(s"Part 2: $solution2")
     println()
   }
 
